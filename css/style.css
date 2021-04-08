@@ -23,6 +23,20 @@ body{
   justify-content: center;
 }
 
+label{
+  color: white;
+  margin: 0px 3px;
+}
+
+select{
+  width:200px;
+  margin: 5px;
+}
+
+select:focus{
+  outline: none;
+}
+
 .album{
   width: calc(100% / 5 - 40px);
   height: 400px;
@@ -75,7 +89,9 @@ h3{
 
 header{
   height: 10vh;
-  background-color: #2E3A46
+  background-color: #2E3A46;
+  display:flex;
+  justify-content: space-between;
 }
 
 main{
@@ -97,6 +113,12 @@ main{
 .logo > img{
   height: 80%;
   cursor: pointer;
+}
+
+.g-selection{
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
 }
 
 /* Main */
