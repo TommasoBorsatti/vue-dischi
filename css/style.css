@@ -30,7 +30,8 @@ label{
 
 select{
   width:200px;
-  margin: 5px;
+  margin: 8px;
+  cursor: pointer;
 }
 
 select:focus{
@@ -71,18 +72,21 @@ select:focus{
   height: 180px;
   width: 100%;
   display: block;
+  cursor: pointer;
 }
 
 /* TYPO */
 
 h2{
   color: white;
-  font-size: 20px
+  font-size: 20px;
+  cursor: pointer;
 }
 
 h3{
   color: lightgrey;
   font-style: italic;
+  cursor: pointer;
 }
 
 /* STRUCTURE */

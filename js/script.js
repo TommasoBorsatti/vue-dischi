@@ -6,6 +6,8 @@ const App = new Vue ({
   data:{
     albums: [],
     genres: [],
+    chosenGenre: "All",
+
   },
 
   methods:{
@@ -22,7 +24,7 @@ const App = new Vue ({
             this.genres.push(item.genre);
           }
         });
-        console.log(this.genres)
+        console.log(this.genres);
       });
   },
 

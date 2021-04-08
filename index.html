@@ -29,7 +29,7 @@
       </div>
       <div class="g-selection">
         <label for="genres">Scegli il tuo genere di musica preferito:</label>
-        <select id="genres" name="genres">
+        <select id="genres" name="genres"  v-model="chosenGenre">
           <option value="All">All</option>
           <option v-for="genre in genres" :value="genre">{{genre}}</option>
         </select>
@@ -38,7 +38,7 @@
 
     <main>
       <div class="container">
-        <div class="album" v-for="album in albums">
+        <div class="album" v-if="(album.genre==chosenGenre) || (chosenGenre=='All')" v-for="album in albums">
           <div class="cover-box">
             <img :src="album.poster" :alt="album.title">
           </div>
@@ -52,6 +52,7 @@
             <h3>{{album.year}}</h3>
           </div>
         </div>
+
       </div>
     </main>
 
